@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Alpha/Core/Inc/CAN.h&apos; to &apos;CAN_Driver.h&apos;" description="Rename resource &apos;CAN.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/CAN.h" name="CAN_Driver.h" stamp="1665003913424" updateReferences="true"/>
+</session>
