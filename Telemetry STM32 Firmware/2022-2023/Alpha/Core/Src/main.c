@@ -47,24 +47,43 @@
 /* Private variables ---------------------------------------------------------*/
 CAN_HandleTypeDef hcan;
 
+SPI_HandleTypeDef hspi1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+// CAN
 CAN_HandleTypeDef hcan;
-static CanTxMsgTypeDef        TxMessage; // CAN_TX is pin 12 (Transmit)
-static CanRxMsgTypeDef        RxMessage; // CAN_RX is pin 11 (Receive)
+//static CanTxMsgTypeDef        TxMessage; // CAN_TX is pin 12 (Transmit)
+//static CanRxMsgTypeDef        RxMessage; // CAN_RX is pin 11 (Receive)
+//
+//int alarmTimeout = 0;
+//int micTimeout = 0;
+//int alarmType = 0;
+//bool testFlag = false;
+// 74HC595 Instructions
+const uint8_t EEPROM_Clear = 0b00000001;
+const uint8_t EEPROM_Func = 0b00101100;
+const uint8_t EEPROM_Entry = 0b00000111;
+const uint8_t EEPROM_Display = 0b00001000;
+const uint8_t output_one = 0b00010011;
+const uint8_t output_two = 0b00100011;
+const uint8_t output_three = 0b00110011;
+const uint8_t output_four = 0b01000011;
+const uint8_t output_five = 0b01010011;
+const uint8_t output_six = 0b01100011;
+const uint8_t output_seven = 0b01110011;
+const uint8_t output_eight = 0b10000011;
+const uint8_t output_nine = 0b10010011;
 
-int alarmTimeout = 0;
-int micTimeout = 0;
-int alarmType = 0;
-bool testFlag = false;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_USART2_UART_Init(void);
 static void MX_CAN_Init(void);
+static void MX_SPI1_Init(void);
+static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -102,24 +121,97 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_CAN_Init();
+  MX_SPI1_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  // INITIALIZE LCD
+void lcd_init (void){
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET); // RS
+	 HAL_Delay(5);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET); // RW
+	 HAL_Delay(5);
+	//8 bit
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // ENABLE ON
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Latch ON
+	 HAL_Delay(5);
+	 HAL_SPI_Transmit(&hspi1, EEPROM_Func, 1, 20);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Latch OFF
+	 HAL_Delay(5);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Latch ON
+	 HAL_Delay(5);
+	 HAL_SPI_Transmit(&hspi1, EEPROM_Entry, 1, 20);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Latch OFF
+	 HAL_Delay(5);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Latch ON
+	 HAL_Delay(5);
+	 HAL_SPI_Transmit(&hspi1, EEPROM_Display, 1, 20);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Latch OFF
+	 HAL_Delay(5);
+	 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // ENABLE OFF
+	 HAL_Delay(5);
 
+
+}
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  //LED ON
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	  HAL_Delay(500);
-	  //LED OFF
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-	  HAL_Delay(500);
 	  //Test LCD code below
+//	  //LED ON
+//	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+//	  HAL_Delay(1000);
+//	  //LED OFF
+//	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+//	  HAL_Delay(500);
 	  //Test CAN code below
+
+//Test LCD Display Code (SPI)
+	  /* PA10 (D2) - LCD Contrast adjust
+	   * PB3 (D3) - register select
+	   * PB5 (D4) - read/write signal
+	   * PB4 (D5) - Enable signal
+	   * PB10 (D11) - Latch MOSI
+	   * PA8 (D12) - Data output MISO
+	   * PA9 (D13) - clock
+	   */
+// Output 6969
+
+	  lcd_init ();
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET); // RS
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET); // RW
+	  HAL_Delay(5);
+
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // ENABLE ON
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Latch ON
+	  HAL_Delay(5);
+	  HAL_SPI_Transmit(&hspi1, output_six, 1, 20);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Latch OFF
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // ENABLE OFF
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // ENABLE ON
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); // Latch ON
+	  HAL_Delay(5);
+	  HAL_SPI_Transmit(&hspi1, output_nine, 1, 20);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_RESET); // Latch OFF
+	  HAL_Delay(5);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // ENABLE OFF
+	  HAL_Delay(5);
+
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET); // RS
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET); // RW
+	  HAL_Delay(3000);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // ENABLE ON
+	  HAL_Delay(5);
+	  HAL_SPI_Transmit(&hspi1, EEPROM_Clear, 1, 20);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET); // ENABLE OFF
+	  HAL_Delay(5);
 
     /* USER CODE END WHILE */
 
@@ -207,6 +299,46 @@ static void MX_CAN_Init(void)
 }
 
 /**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 7;
+  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+
+  /* USER CODE END SPI1_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -257,10 +389,11 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5
+                          |GPIO_PIN_6, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -268,15 +401,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LD2_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB14 */
-  GPIO_InitStruct.Pin = GPIO_PIN_14;
+  /*Configure GPIO pins : PB14 PB3 PB4 PB5
+                           PB6 */
+  GPIO_InitStruct.Pin = GPIO_PIN_14|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5
+                          |GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -287,6 +415,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA8 PA9 PA10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 

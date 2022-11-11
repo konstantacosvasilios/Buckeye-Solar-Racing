@@ -1,43 +1,441 @@
-16:58:17 **** Build of configuration Debug for project Alpha ****
+18:35:11 **** Incremental Build of configuration Debug for project Alpha ****
 make -j12 all 
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.o"
-arm-none-eabi-gcc "C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.o"
-arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f072rbtx.d" -MT"Core/Startup/startup_stm32f072rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f072rbtx.o" "../Core/Startup/startup_stm32f072rbtx.s"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+../Core/Src/main.c: In function 'lcd_init':
+../Core/Src/main.c:136:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  136 |   HAL_SPI_Transmit(&hspi1, EEPROM_Func, 1, 1);
+      |                            ^~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:138:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  138 |   HAL_SPI_Transmit(&hspi1, EEPROM_Entry, 1, 1);
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  140 |   HAL_SPI_Transmit(&hspi1, EEPROM_Display, 1, 1);
+      |                            ^~~~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:181:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  181 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:187:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  187 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 1);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:193:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  193 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:199:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  199 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 1);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:209:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  209 |    HAL_SPI_Transmit(&hspi1, EEPROM_Clear, 1, 1);
+      |                             ^~~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
 arm-none-eabi-gcc -o "Alpha.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\epica\Documents\GitHub\Buckeye-Solar-Racing\Telemetry STM32 Firmware\2022-2023\Alpha\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Alpha.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Alpha.elf
  
 arm-none-eabi-size   Alpha.elf 
 arm-none-eabi-objdump -h -S  Alpha.elf  > "Alpha.list"
    text	   data	    bss	    dec	    hex	filename
-   8112	     20	   1700	   9832	   2668	Alpha.elf
+  11464	     20	   1844	  13328	   3410	Alpha.elf
 Finished building: default.size.stdout
  
 Finished building: Alpha.list
  
-17:22:06 **** Clean-only build of configuration Debug for project Alpha ****
+18:35:23 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-size   Alpha.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11464	     20	   1844	  13328	   3410	Alpha.elf
+Finished building: default.size.stdout
+ 
+18:38:20 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'lcd_init':
+../Core/Src/main.c:136:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  136 |   HAL_SPI_Transmit(&hspi1, EEPROM_Func, 1, 1);
+      |                            ^~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:138:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  138 |   HAL_SPI_Transmit(&hspi1, EEPROM_Entry, 1, 1);
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  140 |   HAL_SPI_Transmit(&hspi1, EEPROM_Display, 1, 1);
+      |                            ^~~~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:181:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  181 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:187:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  187 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 1);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:193:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  193 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:199:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  199 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 1);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:209:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  209 |    HAL_SPI_Transmit(&hspi1, EEPROM_Clear, 1, 1);
+      |                             ^~~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "Alpha.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\epica\Documents\GitHub\Buckeye-Solar-Racing\Telemetry STM32 Firmware\2022-2023\Alpha\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Alpha.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Alpha.elf
+ 
+arm-none-eabi-size   Alpha.elf 
+arm-none-eabi-objdump -h -S  Alpha.elf  > "Alpha.list"
+   text	   data	    bss	    dec	    hex	filename
+  11464	     20	   1844	  13328	   3410	Alpha.elf
+Finished building: default.size.stdout
+ 
+Finished building: Alpha.list
+ 
+18:38:46 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-size   Alpha.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11464	     20	   1844	  13328	   3410	Alpha.elf
+Finished building: default.size.stdout
+ 
+18:39:15 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-size   Alpha.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11464	     20	   1844	  13328	   3410	Alpha.elf
+Finished building: default.size.stdout
+ 
+18:45:09 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'lcd_init':
+../Core/Src/main.c:138:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  138 |   HAL_SPI_Transmit(&hspi1, EEPROM_Func, 1, 1);
+      |                            ^~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:144:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  144 |   HAL_SPI_Transmit(&hspi1, EEPROM_Entry, 1, 1);
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:150:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  150 |   HAL_SPI_Transmit(&hspi1, EEPROM_Display, 1, 1);
+      |                            ^~~~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:195:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  195 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 1);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:205:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  205 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 1);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:217:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  217 |    HAL_SPI_Transmit(&hspi1, EEPROM_Clear, 1, 1);
+      |                             ^~~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "Alpha.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\epica\Documents\GitHub\Buckeye-Solar-Racing\Telemetry STM32 Firmware\2022-2023\Alpha\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Alpha.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Alpha.elf
+ 
+arm-none-eabi-size   Alpha.elf 
+arm-none-eabi-objdump -h -S  Alpha.elf  > "Alpha.list"
+   text	   data	    bss	    dec	    hex	filename
+  11548	     20	   1844	  13412	   3464	Alpha.elf
+Finished building: default.size.stdout
+ 
+Finished building: Alpha.list
+ 
+18:45:48 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-size   Alpha.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11548	     20	   1844	  13412	   3464	Alpha.elf
+Finished building: default.size.stdout
+ 
+18:51:31 **** Incremental Build of configuration Debug for project Alpha ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Device/ST/STM32F0xx/Include -IC:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'lcd_init':
+../Core/Src/main.c:138:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  138 |   HAL_SPI_Transmit(&hspi1, EEPROM_Func, 1, 20);
+      |                            ^~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:143:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  143 |   HAL_SPI_Transmit(&hspi1, EEPROM_Entry, 1, 20);
+      |                            ^~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:148:28: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   HAL_SPI_Transmit(&hspi1, EEPROM_Display, 1, 20);
+      |                            ^~~~~~~~~~~~~~
+      |                            |
+      |                            uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  192 |    HAL_SPI_Transmit(&hspi1, output_six, 1, 20);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:201:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  201 |    HAL_SPI_Transmit(&hspi1, output_nine, 1, 20);
+      |                             ^~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+../Core/Src/main.c:212:29: warning: passing argument 2 of 'HAL_SPI_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  212 |    HAL_SPI_Transmit(&hspi1, EEPROM_Clear, 1, 20);
+      |                             ^~~~~~~~~~~~
+      |                             |
+      |                             uint8_t {aka const unsigned char}
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:277,
+                 from C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:30,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:26:
+C:/Users/epica/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.3/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:792:70: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'const unsigned char'}
+  792 | HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                             ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "Alpha.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\epica\Documents\GitHub\Buckeye-Solar-Racing\Telemetry STM32 Firmware\2022-2023\Alpha\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Alpha.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Alpha.elf
+ 
+arm-none-eabi-size   Alpha.elf 
+arm-none-eabi-objdump -h -S  Alpha.elf  > "Alpha.list"
+   text	   data	    bss	    dec	    hex	filename
+  11512	     20	   1844	  13376	   3440	Alpha.elf
+Finished building: default.size.stdout
+ 
+Finished building: Alpha.list
+ 
+18:53:20 **** Clean-only build of configuration Debug for project Alpha ****
 make -j12 clean 
-rm -rf ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.su
+rm -rf ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32f072rbtx.d ./Core/Startup/startup_stm32f072rbtx.o
+rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f0xx_hal_msp.d ./Core/Src/stm32f0xx_hal_msp.o ./Core/Src/stm32f0xx_hal_msp.su ./Core/Src/stm32f0xx_it.d ./Core/Src/stm32f0xx_it.o ./Core/Src/stm32f0xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f0xx.d ./Core/Src/system_stm32f0xx.o ./Core/Src/system_stm32f0xx.su
+rm -rf Alpha.elf Alpha.list Alpha.map default.size.stdout
+ 
+18:53:29 **** Clean-only build of configuration Debug for project Alpha ****
+make -j12 clean 
+rm -rf ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_can.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_cortex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_dma.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_exti.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_flash_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_gpio.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_i2c_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_pwr_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_rcc_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_spi_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart.su ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.d ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.o ./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_uart_ex.su
 rm -rf ./Core/Startup/startup_stm32f072rbtx.d ./Core/Startup/startup_stm32f072rbtx.o
 rm -rf ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f0xx_hal_msp.d ./Core/Src/stm32f0xx_hal_msp.o ./Core/Src/stm32f0xx_hal_msp.su ./Core/Src/stm32f0xx_it.d ./Core/Src/stm32f0xx_it.o ./Core/Src/stm32f0xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f0xx.d ./Core/Src/system_stm32f0xx.o ./Core/Src/system_stm32f0xx.su
 rm -rf Alpha.elf Alpha.list Alpha.map default.size.stdout
